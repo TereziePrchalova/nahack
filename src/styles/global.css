@@ -1,0 +1,76 @@
+/* ── TOKENS ─────────────────────────────────────────────── */
+:root {
+  --bg:          #07090c;
+  --bg2:         #0c1018;
+  --bg3:         #111824;
+  --cyan:        #00e5ff;
+  --cyan-dim:    #007a8a;
+  --cyan-dark:   #011f26;
+  --teal:        #00c9a7;
+  --acid:        #a8ff3e;
+  --white:       #ddeaf5;
+  --muted:       #3d5a70;
+  --muted-light: #6b8fa8;
+  --border:      #162030;
+  --border-hi:   #1e3a50;
+  --red:         #ff4f6a;
+  --red-dim:     rgba(255,79,106,0.25);
+}
+
+/* ── RESET ───────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; }
+
+/* ── GRID OVERLAY ────────────────────────────────────────── */
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background-image:
+    linear-gradient(rgba(0,229,255,0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,229,255,0.018) 1px, transparent 1px);
+  background-size: 52px 52px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── SCANLINE ────────────────────────────────────────────── */
+@keyframes scanline {
+  0%   { transform: translateY(-100vh); }
+  100% { transform: translateY(100vh); }
+}
+body::after {
+  content: '';
+  position: fixed; left: 0; right: 0; height: 2px;
+  background: linear-gradient(transparent, rgba(0,229,255,0.04), transparent);
+  animation: scanline 12s linear infinite;
+  pointer-events: none;
+  z-index: 200;
+}
+
+/* ── ANIMATIONS ──────────────────────────────────────────── */
+@keyframes pulse   { 0%,100%{opacity:1}   50%{opacity:0.35} }
+@keyframes fadeUp  { from{opacity:0;transform:translateY(28px)} to{opacity:1;transform:none} }
+
+/* ── REVEAL ──────────────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.reveal.visible { opacity: 1; transform: none; }
+
+/* ── NAV RESPONSIVE ──────────────────────────────────────── */
+@media (max-width: 768px) {
+  .nav-desktop  { display: none !important; }
+  .nav-tag      { display: none !important; }
+  .hamburger    { display: flex !important; }
+}
