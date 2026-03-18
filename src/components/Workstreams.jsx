@@ -7,12 +7,12 @@ const WS = [
   {
     num: 'WS — 01',
     title: 'Unified Annotation & Validation Workflow',
-    body: 'Integrate key annotation and validation steps into a single workflow with consistent, standardised outputs, demonstrated on agreed case studies. Building toward reproducible, community-ready pipelines.',
+    body: 'Integrate key annotation and validation steps into a single workflow with consistent, standardised outputs (reports/tables; potentially format extensions), demonstrated on agreed case studies.',
   },
   {
     num: 'WS — 02',
-    title: 'RNA Prediction & Non-Canonical Base Pairs',
-    body: 'Define or refine interoperable 2D + mmCIF representations of canonical and non-canonical base pairs, and use them to support benchmarking and case studies for RNA structure prediction approaches.',
+    title: 'RNA prediction and non-Watson-Crick base pairs',
+    body: 'Define or refine interoperable 2D + mmCIF representations of Watson-Crick and non-Watson-Crick base pairs, and use them to support benchmarking and case studies for prediction approaches.',
   },
 ]
 

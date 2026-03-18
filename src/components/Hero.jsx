@@ -48,10 +48,10 @@ export default function Hero() {
           ACID<br />
           <span style={{ color: C.cyan }}>STRUCTURE</span><br />
           <span style={{
-            fontSize: 'clamp(28px,4.5vw,58px)',
+            fontSize: 'clamp(28px,4.5vw,50px)',
             color: C.mutedLight, letterSpacing: '0.03em',
           }}>
-            ANNOTATION &amp; PREDICTION HACKATHON
+            ANNOTATION &amp; PREDICTION HACKATHON 2026
           </span>
         </h1>
 
@@ -60,17 +60,15 @@ export default function Hero() {
           fontSize: 'clamp(14px,1.5vw,16px)', lineHeight: 1.7,
           color: C.mutedLight, maxWidth: 440, marginTop: 24,
         }}>
-          From tools to interoperable workflows for nucleic acid structures.
-          Three focused days. Domain experts and early-career researchers.
+          From tools to interoperable workflows for nucleic acid structures. This event addresses two key bottlenecks in the field: fragmented annotation and validation tooling, and the insufficient treatment of non-Watson–Crick base pairs in RNA structure prediction.
         </p>
 
         {/* Meta strip */}
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px 40px', marginTop: 36 }}>
           {[
             ['Dates',        '27–29 MAY 2026'],
-            ['Time',         '10:00 – 16:00'],
             ['Participants', '~15–20 EXPERTS'],
-            ['Location',     'HOTEL GLOBUS, PRAGUE'],
+            ['Location',     'HOTEL GLOBUS, PRAGUE, CZECH REPUBLIC'],
           ].map(([label, val]) => (
             <div key={label} style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
               <span style={{ ...mono, fontSize: 10, letterSpacing: '0.15em', textTransform: 'uppercase', color: C.muted }}>

@@ -4,10 +4,10 @@ import { useReveal } from '../hooks'
 import { SectionTag, SectionTitle } from './UI'
 
 const ITEMS = [
-  'A runnable prototype workflow for annotation/validation demonstrated on agreed inputs',
-  'A documented format/spec + examples covering non-canonical base pairs (2D + mmCIF mapping)',
-  'A brief benchmarking summary and a prioritized roadmap of next steps',
-  'A public repository with README, usage notes, and a write-up outline for community reuse',
+  'A runnable prototype workflow,',
+  'Documented format/specification examples',
+  'benchmarking outputs',
+  'shared repository materials',
 ]
 
 export default function Outcomes() {

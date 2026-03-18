@@ -1,4 +1,6 @@
 import { C, mono } from '../styles/tokens'
+import IBT from '../../public/IBT.png'
+import ELIXIR from '../../public/elixir.png'
 
 export default function Footer() {
   return (
@@ -9,11 +11,13 @@ export default function Footer() {
       flexWrap: 'wrap', gap: 12,
       position: 'relative', zIndex: 1,
     }}>
-      <span style={{ ...mono, fontSize: 11, color: C.muted }}>
+      <span style={{ ...mono, fontSize: 11, color: C.muted, marginTop: 'auto' }}>
         © 2026 NUCLEIC ACID STRUCTURE HACKATHON · IBT CAS · PRAGUE
       </span>
       <span style={{ ...mono, fontSize: 11, color: C.muted }}>
-        27–29 MAY 2026 · HOTEL GLOBUS
+        FUNDED BY ELIXIR AND SUPPORTED BY IBT
+        <img style={{width: '3rem', margin: '0 1rem'}} src={ELIXIR}/>
+        <img style={{width: '3rem'}} src={IBT}/>
       </span>
     </footer>
   )

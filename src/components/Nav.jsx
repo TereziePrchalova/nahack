@@ -23,7 +23,7 @@ export default function Nav() {
       }}>
         {/* Logo */}
         <div style={{ ...mono, color: C.cyan, fontWeight: 700, fontSize: 12, letterSpacing: '0.12em' }}>
-          NA-HACK 2026
+          NA-HACKATHON 2026
         </div>
 
         {/* Desktop links */}

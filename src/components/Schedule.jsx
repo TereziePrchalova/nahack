@@ -4,16 +4,16 @@ import { SectionTag, SectionTitle } from './UI'
 
 const DAYS = [
   {
-    n: '01', date: 'Wed — 27 May', title: 'Kickoff & Sprint Planning',
-    items: ['Arrivals & registration', 'Kickoff presentations', 'Team formation', 'Sprint planning session', 'Evening group dinner'],
+    n: '01', date: 'Wed — 27 May', title: 'Kickoff & Start Implementing',
+    items: ['12:00–13:30 Arrivals & registration', '12:30–13:30 Lunch', '13:30–14:00 Welcome and hackathon kickoff', '14:00–15:30 Work session 1', '15:30–16:00 Coffee break', '16:00–18:30 Work session 2', '18:30–24:00 Group dinner (buffet reception), Music Club, Hotel Globus'],
   },
   {
     n: '02', date: 'Thu — 28 May', title: 'Build, Integrate & Test',
-    items: ['Core build sessions', 'Integration & testing', 'Benchmarking work', 'Evening consolidation'],
+    items: ['09:00–10:30 Work session 3', '10:30–11:00 Coffee break', '11:00–12:30 Work session 4', '12:30–13:30 Lunch', '13:30–15:00 Work session 5', '15:00–15:30 Coffee break', '15:30–17:30 Work session 6', '18:30 Group dinner'],
   },
   {
     n: '03', date: 'Fri — 29 May', title: 'Finalize & Demos',
-    items: ['Finalize outputs', 'Demos & presentations', 'Define next steps', 'Departures'],
+    items: ['09:00–10:30 Work session 7', '10:30–11:00 Coffee break', '11:00–12:30 Project presentations and wrap-up', '12:30–13:30 Lunch', '13:30 Departure'],
   },
 ]
 
